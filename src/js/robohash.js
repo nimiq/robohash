@@ -85,7 +85,7 @@ class Robohash {
         ]
     }
 
-    static _assetIndex(index) { index = Number(index) + 1; return index < 10 ? '0' + num : num }
+    static _assetIndex(index) { index = Number(index) + 1; return index < 10 ? '0' + index : index }
 
     static _hash(text) {
         return ('' + text
