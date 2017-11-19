@@ -1,0 +1,44 @@
+rm -rf tmp
+mkdir tmp
+
+symbolize ()
+{
+folder=$1
+for file in $folder*
+do
+    filename=$(basename "$file")
+    filename="${filename%.*}"
+    sed -i '' 's/svg xmlns="http:\/\/www.w3.org\/2000\/svg"/symbol id="'$filename'"/g' $file
+    sed -i '' 's/\/svg/\/symbol/g' $file
+    sed -i '' 's/#26a9e0/currentColor/g' $file
+done
+}
+
+mkdir tmp/accessory
+./node_modules/svgo/bin/svgo -f src/svg/accessory -o tmp/accessory --config=config.yml
+symbolize tmp/accessory/
+
+mkdir tmp/body
+./node_modules/svgo/bin/svgo -f src/svg/body -o tmp/body --config=config.yml
+symbolize tmp/body/
+
+mkdir tmp/eyes
+./node_modules/svgo/bin/svgo -f src/svg/eyes -o tmp/eyes --config=config.yml
+symbolize tmp/eyes/
+
+mkdir tmp/face
+./node_modules/svgo/bin/svgo -f src/svg/face -o tmp/face --config=config.yml
+symbolize tmp/face/
+
+mkdir tmp/mouth
+./node_modules/svgo/bin/svgo -f src/svg/mouth -o tmp/mouth --config=config.yml
+symbolize tmp/mouth/
+
+
+echo '<svg xmlns="http://www.w3.org/2000/svg">' > dist/robohash.min.svg
+cat `find tmp -name '*.svg'` >> dist/robohash.min.svg
+echo '</svg>' >> dist/robohash.min.svg
+
+rm -rf tmp
+
+uglifyjs --compress --mangle -o dist/robohash.min.js -- src/js/robohash.js

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>robohash.svg</title>
+    <style type="text/css">
+    html,
+    body {
+        background: linear-gradient(#536DFE, #b453fe);
+        text-align: center;
+        padding-top: 48px;
+    }
+
+    .robohash {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .small {
+        width: 128px;
+        height: 128px;
+        margin: 8px;
+        display: inline-block;
+    }
+    input{
+        background: none;
+        outline: none;
+        border: none;
+        color: white;
+        font-size: 40px;
+        font-family:Arial; 
+        padding: 16px; 
+        margin: 24px;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="robohash" id="robohash"></div>
+        <input onkeyup="Robohash.render(this.value, robohash)" placeholder="Robohash a Text" autofocus="true">
+        </div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+        <div class="robohash small"></div>
+    </div>
+    <script src="src/js/robohash.js"></script>
+    <!-- <script src="dist/robohash.min.js"></script> -->
+    <script type="text/javascript">
+    const now = Date.now()
+    document.querySelectorAll('.robohash').forEach((e, i) => Robohash.render(now + 'identicon' + i, e))
+    </script>
+</body>
+
+</html>
