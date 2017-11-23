@@ -12,7 +12,7 @@ class Robohash {
     }
 
     static toDataUrl(text) {
-        return `url(data:image/svg+xml;base64,${btoa(this.svg(text))})`;
+        return `data:image/svg+xml;base64,${btoa(this.svg(text))}`;
     }
 
 
@@ -45,19 +45,19 @@ class Robohash {
     }
 
     static _$use(part, index) {
-        return `<use transform="translate(0,20)" width="320" height="300" xlink:href="/robohash/dist/robohash.min.svg#${part}-${this._assetIndex(index)}" />`;
+        return `<use transform="translate(0,20)" width="320" height="300" xlink:href="${location.origin}/robohash/dist/robohash.min.svg#${part}-${this._assetIndex(index)}" />`;
     }
 
     static get colors() {
         return [
             '#ff9800', // orange-500
-            '#f44336', // red-500
+            '#E53935', // red-600
             '#FDD835', // yellow-600
             '#3f51b5', // indigo-500
             '#03a9f4', // light-blue-500
             '#9c27b0', // purple-500
             '#009688', // teal-500
-            '#e91e63', // pink-500
+            '#EC407A', // pink-400
             '#8bc34a', // light-green-500
             '#795548' // brown-500
         ]
@@ -66,14 +66,14 @@ class Robohash {
     static get bgColors() {
         return [
             /* Red  */
-            '#ff8a80', // red-a100
-            '#ff80ab', // pink-a100
+            '#FF8A80', // red-a100
+            '#F48FB1', // pink-200
             '#ea80fc', // purple-a100
 
             /* Blue */
             '#8c9eff', // indigo-a100
             '#80d8ff', // light-blue-a100
-            '#78909C', // blue-grey-200
+            '#CFD8DC', // blue-grey-100
 
             /* Green */
             '#1DE9B6', // teal-a400
