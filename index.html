@@ -22,14 +22,15 @@
         margin: 8px;
         display: inline-block;
     }
-    input{
+
+    input {
         background: none;
         outline: none;
         border: none;
         color: white;
         font-size: 40px;
-        font-family:Arial; 
-        padding: 16px; 
+        font-family: Arial;
+        padding: 16px;
         margin: 24px;
         text-align: center;
         border-bottom: 1px solid white;
@@ -41,41 +42,8 @@
     <div class="container">
         <div>
             <div class="robohash" id="robohash"></div>
-        <input onkeyup="Robohash.render(this.value, robohash)" placeholder="Robohash a Text" autofocus="true">
+            <input onkeyup="document.querySelectorAll('.robohash').forEach((e, i) => Robohash.render(this.value+i, e))" placeholder="Robohash a Text" autofocus="true">
         </div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
-        <div class="robohash small"></div>
         <div class="robohash small"></div>
         <div class="robohash small"></div>
         <div class="robohash small"></div>
