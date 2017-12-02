@@ -1,4 +1,4 @@
-# Identicons
+# Robohash SVG
 SVG+JS Identicons based on [Robohash](https://robohash.org). The original library is designed to run on a server while this version is designed to run in browsers. The library is only ~27kB compressed and heaviliy optimized for performance. 
 
 
