@@ -1,7 +1,6 @@
-# identicons
-SVG Identicons based on Robohash
+# Identicons
+SVG+JS Identicons based on [Robohash](https://robohash.org).
 
-
-Todo:
-- Merge duplicate paths
-	- maybe via https://stackoverflow.com/questions/10274305/remove-the-same-node-with-same-attribute-under-the-same-parent-in-xml-using-xslt
+# Usage
+ 1. Include the script: `<script src="dist/robohash.min.js"></script>`
+ 2. Render: `Robohash.render('any text here', document.getElementById('someElement'))`
