@@ -126,11 +126,10 @@
         <div class="robohash small"></div>
         <div class="robohash small"></div>
     </div>
-    <script src="src/js/robohash.js"></script>
-    <!-- <script src="dist/robohash.min.js"></script> -->
-    <script type="text/javascript">
-    const now = Date.now()
-    document.querySelectorAll('.robohash').forEach((e, i) => Robohash.render(now + 'identicon' + i, e))
+    <script type="module">
+        import Robohash from './src/js/robohash.js';
+        const now = Date.now()
+        document.querySelectorAll('.robohash').forEach((e, i) => Robohash.render(now + 'identicon' + i, e))
     </script>
 </body>
 
