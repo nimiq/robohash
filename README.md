@@ -17,3 +17,4 @@ For more information on our design decisions read our [design blog post](https:/
 
 ## Hexagon-shaped Identicons
 Since hexagons are part of our brand identity we've created another version of this library generating [hexagon-shaped robohashs](https://github.com/nimiq/x-identicon).
+
