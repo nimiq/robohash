@@ -1,4 +1,5 @@
 # Robohash SVG
+
 SVG+JS Identicons based on [Robohash](https://robohash.org). The original library is designed to run on a server while _Robohash SVG_ is designed to run in browsers. The library is only ~27kB compressed and heaviliy optimized for performance. 
 
 ![Robohash](https://robohash.org/nimiq42.png)
