@@ -45,7 +45,7 @@ export default class Robohash {
     }
 
     static _$use(part, index) {
-        return `<use width="320" height="300" transform="translate(0,20)" xlink:href="${location.origin}/library/robohash/dist/robohash.min.svg#${part}-${this._assetIndex(index)}" />`;
+        return `<use width="320" height="300" transform="translate(0,20)" xlink:href="${location.origin}/libraries/robohash/dist/robohash.min.svg#${part}-${this._assetIndex(index)}" />`;
     }
 
     static get colors() {
