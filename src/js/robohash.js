@@ -39,7 +39,7 @@ export default class Robohash {
 
     static _$svg(content) {
         return `
-            <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/2000/xlink" >
+            <svg viewBox="0 0 320 320" width="320" height="320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/2000/xlink" >
                 ${content}
             </svg>`
     }
